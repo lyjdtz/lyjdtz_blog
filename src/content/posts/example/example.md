@@ -1,6 +1,6 @@
 ---
 title: 文章模板
-published: 2025-09-19
+published: 2000-09-19
 description:  ''
 image: './1.jpg'
 tags: []
