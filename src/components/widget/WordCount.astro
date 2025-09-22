@@ -1,0 +1,70 @@
+---
+import { Icon } from "astro-icon/components";
+import WidgetLayout from "./WidgetLayout.astro";
+import I18nKey from "../../i18n/i18nKey";
+import { i18n } from "../../i18n/translation";
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  class?: string;
+  style?: string;
+}
+
+const className = Astro.props.class;
+const style = Astro.props.style;
+
+// 获取所有文章并计算总字数和文章数量
+async function getBlogStatistics() {
+  // 动态导入getCollection以避免构建时问题
+  const { getCollection } = await import('astro:content');
+  
+  // 获取所有非草稿文章
+  const allBlogPosts = await getCollection<"posts">('posts', ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
+  
+  // 计算总字数
+  let totalWords = 0;
+  for (const post of allBlogPosts) {
+    try {
+      // 正确的方式：通过render()方法获取remarkPluginFrontmatter对象
+      const { remarkPluginFrontmatter } = await post.render();
+      if (remarkPluginFrontmatter && typeof remarkPluginFrontmatter.words === 'number') {
+        totalWords += remarkPluginFrontmatter.words;
+      }
+    } catch (error) {
+      console.error(`获取文章${post.id}字数时出错:`, error);
+    }
+  }
+  
+  return {
+    totalWords,
+    postCount: allBlogPosts.length
+  };
+}
+
+// 格式化数字，添加千位分隔符
+function formatNumber(num: number): string {
+  return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+const { totalWords, postCount } = await getBlogStatistics();
+const formattedWordCount = formatNumber(totalWords);
+---
+
+<WidgetLayout 
+  name="统计"
+  id="word-count-widget"
+  class={className}
+  style={style}
+>
+    <div class="flex justify-center items-center gap-2">
+      <Icon name="material-symbols:notes-rounded" class="text-[var(--primary)]" />
+      <span id="statistics-info" class="font-medium text-neutral-400 dark:text-neutral-2000">
+        {postCount} {i18n(postCount === 1 ? I18nKey.postCount : I18nKey.postsCount)}，{formattedWordCount} {i18n(totalWords === 1 ? I18nKey.wordCount : I18nKey.wordsCount)}
+      </span>
+    </div>
+  </div>
+
+  
+</WidgetLayout>

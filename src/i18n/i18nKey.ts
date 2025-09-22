@@ -33,6 +33,12 @@ enum I18nKey {
 	author = "author",
 	publishedAt = "publishedAt",
 	license = "license",
+
+	// View count related keys
+	viewCount = "viewCount",
+	viewsCount = "viewsCount",
+	totalViews = "totalViews",
+
 }
 
 export default I18nKey;

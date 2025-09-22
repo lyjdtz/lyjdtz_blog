@@ -4,3 +4,4 @@
 ::github{repo="saicaca/fuwari"}
 ::github{repo="withastro/astro"}
 ::github{repo="netlify/cli"}
+::github{repo="umami-software/umami"}

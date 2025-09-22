@@ -36,4 +36,10 @@ export const zh_CN: Translation = {
 	[Key.author]: "作者",
 	[Key.publishedAt]: "发布于",
 	[Key.license]: "许可协议",
+	
+	// View count related translations
+	[Key.viewCount]: "次访问",
+	[Key.viewsCount]: "次访问",
+	[Key.totalViews]: "总访问量",
+
 };
