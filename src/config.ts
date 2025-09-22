@@ -44,6 +44,11 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		{
+			name: "统计",
+			url: "https://cloud.umami.is/share/3y9hrX71x9jicbBy/lyjdtz.life",
+			external: true,
+		},
 		
 	],
 };

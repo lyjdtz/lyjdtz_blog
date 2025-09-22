@@ -15,4 +15,8 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: i18n(I18nKey.archive),
 		url: "/archive/",
 	},
+	[LinkPreset.statistics]: {
+		name: i18n(I18nKey.statistics),
+		url: "https://cloud.umami.is/share/3y9hrX71x9jicbBy/lyjdtz.life",
+	},
 };
