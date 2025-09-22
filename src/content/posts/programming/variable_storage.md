@@ -4,7 +4,7 @@ published: 2025-09-19
 description:  '关于变量名字本身存储的探讨'
 image: ''
 tags: [C++]
-category: 'programming'
+category: '编程'
 draft: false
 ---
 
