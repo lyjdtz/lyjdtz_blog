@@ -50,16 +50,7 @@
         }
         const data = await response.json();
         return data;
-      } catch (error) {
-        console.error('加载知识图谱数据失败:', error);
-        // 返回示例数据作为备选
-        return {
-          "nodes": [
-            { "id": 1, "label": "错误", "type": "domain", "color": "#3b82f6" },
-          ],
-          "links": []
-        };
-      }
+      } 
     }
     
     // 初始化知识图谱
