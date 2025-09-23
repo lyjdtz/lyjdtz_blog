@@ -44,13 +44,22 @@
       // 使用fetch加载JSON数据
       async function loadGraphData() {
       try {
-        const response = await fetch('/src/content/spec/knowledge-graph-data.json');
+        const response = await fetch('/knowledge-graph-data.json');
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
         const data = await response.json();
         return data;
-      } 
+      } catch (error) {
+        console.error('加载知识图谱数据失败:', error);
+        // 返回示例数据作为备选
+        return {
+          "nodes": [
+            { "id": 1, "label": "错误", "type": "domain", "color": "#3b82f6" },
+          ],
+          "links": []
+        };
+      }
     }
     
     // 初始化知识图谱
