@@ -68,6 +68,12 @@ importers:
       astro-icon:
         specifier: ^1.1.5
         version: 1.1.5
+      cytoscape:
+        specifier: ^3.33.1
+        version: 3.33.1
+      graphviz:
+        specifier: ^0.0.9
+        version: 0.0.9
       hastscript:
         specifier: ^9.0.1
         version: 9.0.1
@@ -2332,6 +2338,10 @@ packages:
     resolution: {integrity: sha512-0LrrStPOdJj+SPCCrGhzryycLjwcgUSHBtxNA8aIDxf0GLsRh1cKYhB00Gd1lDOS4yGH69+SNn13+TWbVHETFQ==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0, npm: '>=7.0.0'}
 
+  cytoscape@3.33.1:
+    resolution: {integrity: sha512-iJc4TwyANnOGR1OmWhsS9ayRS3s+XQ185FmuHObThD+5AeJCakAAbWv8KimMTt08xCCLNgneQwFp+JRJOr9qGQ==}
+    engines: {node: '>=0.10'}
+
   data-view-buffer@1.0.2:
     resolution: {integrity: sha512-EmKO5V3OLXh1rtK2wgXRansaK1/mtVdTUEiEI0W8RkvgT05kfxaH29PliLnpLP73yYO6142Q72QNa8Wx/A5CqQ==}
     engines: {node: '>= 0.4'}
@@ -2795,6 +2805,10 @@ packages:
 
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  graphviz@0.0.9:
+    resolution: {integrity: sha512-SmoY2pOtcikmMCqCSy2NO1YsRfu9OO0wpTlOYW++giGjfX1a6gax/m1Fo8IdUd0/3H15cTOfR1SMKwohj4LKsg==}
+    engines: {node: '>=0.6.8'}
 
   gzip-size@3.0.0:
     resolution: {integrity: sha512-6s8trQiK+OMzSaCSVXX+iqIcLV9tC+E73jrJrJTyS4h/AJhlxHvzFKqM1YLDJWRGgHX8uLkBeXkA0njNj39L4w==}
@@ -4672,6 +4686,10 @@ packages:
   tar@6.2.1:
     resolution: {integrity: sha512-DZ4yORTwrbTj/7MZYq2w+/ZFdI6OZ/f9SFHR+71gIVUZhOQPHzVCLpvRnPgyaMpfWxxk/4ONva3GQSyNIKRv6A==}
     engines: {node: '>=10'}
+
+  temp@0.4.0:
+    resolution: {integrity: sha512-IsFisGgDKk7qzK9erMIkQe/XwiSUdac7z3wYOsjcLkhPBy3k1SlvLoIh2dAHIlEpgA971CgguMrx9z8fFg7tSA==}
+    engines: {'0': node >=0.4.0}
 
   terser@5.43.1:
     resolution: {integrity: sha512-+6erLbBm0+LROX2sPXlUYx/ux5PyE9K/a92Wrt6oA+WDAoFTdpHE5tCYCI5PNzq2y8df4rA+QgHLJuR4jNymsg==}
@@ -7723,6 +7741,8 @@ snapshots:
     dependencies:
       css-tree: 2.2.1
 
+  cytoscape@3.33.1: {}
+
   data-view-buffer@1.0.2:
     dependencies:
       call-bound: 1.0.4
@@ -8257,6 +8277,10 @@ snapshots:
   gopd@1.2.0: {}
 
   graceful-fs@4.2.11: {}
+
+  graphviz@0.0.9:
+    dependencies:
+      temp: 0.4.0
 
   gzip-size@3.0.0:
     dependencies:
@@ -10665,6 +10689,8 @@ snapshots:
       minizlib: 2.1.2
       mkdirp: 1.0.4
       yallist: 4.0.0
+
+  temp@0.4.0: {}
 
   terser@5.43.1:
     dependencies:

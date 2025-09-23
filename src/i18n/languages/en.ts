@@ -4,6 +4,7 @@ import type { Translation } from "../translation";
 export const en: Translation = {
 	[Key.home]: "Home",
 	[Key.about]: "About",
+	[Key.knowledge]: "Knowledge Graph",
 	[Key.archive]: "Archive",
 	[Key.search]: "Search",
 
@@ -35,4 +36,10 @@ export const en: Translation = {
 	[Key.author]: "Author",
 	[Key.publishedAt]: "Published at",
 	[Key.license]: "License",
+	
+	// View count related translations
+	[Key.viewCount]: "view",
+	[Key.viewsCount]: "views",
+	[Key.totalViews]: "Total Views",
+
 };

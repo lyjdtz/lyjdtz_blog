@@ -1,6 +1,6 @@
-import I18nKey from "@i18n/i18nKey";
-import { i18n } from "@i18n/translation";
-import { LinkPreset, type NavBarLink } from "@/types/config";
+import { i18n } from "../i18n/translation";
+import I18nKey from "../i18n/i18nKey";
+import { LinkPreset, type NavBarLink } from "../types/config";
 
 export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 	[LinkPreset.Home]: {
@@ -15,8 +15,9 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: i18n(I18nKey.archive),
 		url: "/archive/",
 	},
-	[LinkPreset.statistics]: {
-		name: i18n(I18nKey.statistics),
-		url: "https://cloud.umami.is/share/3y9hrX71x9jicbBy/lyjdtz.life",
+	[LinkPreset.knowledge]: {
+		name: i18n(I18nKey.knowledge),
+		url: "/knowledge/",
 	},
+	
 };

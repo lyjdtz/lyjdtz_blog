@@ -6,7 +6,7 @@ export const zh_CN: Translation = {
 	[Key.about]: "关于",
 	[Key.archive]: "文章",
 	[Key.search]: "搜索",
-	[Key.statistics]: "统计",
+	[Key.knowledge]: "知识图",
 
 	[Key.tags]: "标签",
 	[Key.categories]: "分类",
@@ -41,5 +41,6 @@ export const zh_CN: Translation = {
 	[Key.viewCount]: "次访问",
 	[Key.viewsCount]: "次访问",
 	[Key.totalViews]: "总访问量",
+
 
 };

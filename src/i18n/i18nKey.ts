@@ -1,7 +1,7 @@
 enum I18nKey {
 	home = "home",
 	about = "about",
-	statistics = "statistics",
+	knowledge = "knowledge",
 	archive = "archive",
 	search = "search",
 
@@ -38,6 +38,7 @@ enum I18nKey {
 	viewCount = "viewCount",
 	viewsCount = "viewsCount",
 	totalViews = "totalViews",
+
 
 }
 
