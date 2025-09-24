@@ -4,5 +4,5 @@
 
 ::github{repo="saicaca/fuwari"}
 ::github{repo="withastro/astro"}
-::github{repo="netlify/cli"}
+::github{repo="vercel/vercel"}
 ::github{repo="umami-software/umami"}
