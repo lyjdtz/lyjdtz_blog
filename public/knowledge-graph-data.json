@@ -1,13 +1,13 @@
 {
   "nodes": [
     { "id": 1, "label": "知识图", "type": "domain", "highlighted": true },
-    { "id": 2, "label": "测试", "type": "skill" },
-    { "id": 3, "label": "测试", "type": "skill", "highlighted": true },
-    { "id": 4, "label": "测试", "type": "knowledge" },
-    { "id": 5, "label": "测试", "type": "knowledge" },
-    { "id": 6, "label": "测试", "type": "knowledge" },
-    { "id": 7, "label": "测试", "type": "knowledge" },
-    { "id": 8, "label": "测试", "type": "knowledge" }
+    { "id": 2, "label": "测试1", "type": "skill" },
+    { "id": 3, "label": "测试2", "type": "skill", "highlighted": true },
+    { "id": 4, "label": "测试3", "type": "knowledge" },
+    { "id": 5, "label": "测试4", "type": "knowledge" },
+    { "id": 6, "label": "测试5", "type": "knowledge" },
+    { "id": 7, "label": "测试6", "type": "knowledge" },
+    { "id": 8, "label": "测试7", "type": "knowledge" }
   ],
   "links": [
     { "source": 1, "target": 2 },
