@@ -48,8 +48,24 @@ function formatNumber(num: number): string {
   return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 }
 
+// 计算网站运行天数
+function getDaysSinceLaunch(): number {
+  // 网站启动日期 - 这里使用一个示例日期，您可以根据实际情况修改
+  const launchDate = new Date('2024-05-13');
+  const currentDate = new Date();
+  
+  // 计算两个日期之间的毫秒差
+  const timeDiff = currentDate.getTime() - launchDate.getTime();
+  
+  // 将毫秒差转换为天数
+  const daysDiff = Math.floor(timeDiff / (1000 * 3600 * 24));
+  
+  return daysDiff;
+}
+
 const { totalWords, postCount } = await getBlogStatistics();
 const formattedWordCount = formatNumber(totalWords);
+const daysSinceLaunch = getDaysSinceLaunch();
 ---
 
 <WidgetLayout 
@@ -58,13 +74,21 @@ const formattedWordCount = formatNumber(totalWords);
   class={className}
   style={style}
 >
+  <div class="flex flex-col items-center gap-2">
+    <!-- 网站运行天数 -->
+    <div class="flex justify-center items-center gap-1">
+      <Icon name="material-symbols:calendar-today" class="text-[var(--primary)] w-4 h-4" />
+      <span class="font-medium text-neutral-400 dark:text-neutral-200">
+        已运行 <span id="website-days" class="text-[var(--primary)]">{daysSinceLaunch}</span> 天
+      </span>
+    </div>
+    
+    <!-- 文章数量和总字数 -->
     <div class="flex justify-center items-center gap-2">
       <Icon name="material-symbols:notes-rounded" class="text-[var(--primary)]" />
-      <span id="statistics-info" class="font-medium text-neutral-400 dark:text-neutral-2000">
+      <span id="statistics-info" class="font-medium text-neutral-400 dark:text-neutral-200">
         {postCount} {i18n(postCount === 1 ? I18nKey.postCount : I18nKey.postsCount)}，{formattedWordCount} {i18n(totalWords === 1 ? I18nKey.wordCount : I18nKey.wordsCount)}
       </span>
     </div>
   </div>
-
-  
 </WidgetLayout>

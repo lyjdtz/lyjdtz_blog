@@ -1,5 +1,5 @@
-import { i18n } from "../i18n/translation";
 import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
 import { LinkPreset, type NavBarLink } from "../types/config";
 
 export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
@@ -19,5 +19,16 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: i18n(I18nKey.knowledge),
 		url: "/knowledge/",
 	},
-	
+	[LinkPreset.me]: {
+		name: i18n(I18nKey.me),
+		url: "/me/",
+	},
+	[LinkPreset.friend]: {
+		name: i18n(I18nKey.friend),
+		url: "/friend/",
+	},
+	[LinkPreset.traing]: {
+		name: i18n(I18nKey.traing),
+		url: "/traing/",
+	},
 };

@@ -43,7 +43,8 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		LinkPreset.About,
+		LinkPreset.traing,
+		LinkPreset.me,
 		//https://www.processon.com/embed/68d2a55ad418893a51d1bea1
 		{
 			name: "统计",
@@ -56,21 +57,16 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/touxiang.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "lyjdtz",
+	name: "兔子",
 	bio: "代码如诗，逻辑为歌",
 	links: [
-		{
-			name: "Twitter",
-			icon: "ic:baseline-email", // Visit https://icones.js.org/ for icon codes
+		//{
+			//name: "Twitter",
+			//icon: "ic:baseline-email", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "mailto:1542761533@qq.com",
-		},
-		{
-			name: "GitHub",
-			icon: "fa6-brands:github",
-			url: "https://github.com/1542761533",
-		},
+			//url: "mailto:1542761533@qq.com",
+		//},
 	],
 };
 

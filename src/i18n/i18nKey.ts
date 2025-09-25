@@ -2,8 +2,11 @@ enum I18nKey {
 	home = "home",
 	about = "about",
 	knowledge = "knowledge",
+	me = "me",
 	archive = "archive",
 	search = "search",
+	friend = "friend",
+	traing = "traing",
 
 	tags = "tags",
 	categories = "categories",
