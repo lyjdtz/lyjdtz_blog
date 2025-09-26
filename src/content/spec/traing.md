@@ -1,5 +1,49 @@
 
 <style>
+  /* 运动统计模块样式 */
+  .activity-stats-wrapper {
+    width: 100%;
+    max-width: 1648px;
+    margin: 0 auto 32px auto;
+    padding: 24px;
+    background: linear-gradient(135deg, #edb1f1, #d59bf6);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .activity-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .stat-item {
+    text-align: center;
+    flex: 1;
+    min-width: 150px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 8px 0;
+    line-height: 1.2;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+  }
+  
   /* Strava活动容器样式 */
   .strava-activities-wrapper {
     display: flex;
@@ -52,6 +96,28 @@
     display: none;
   }
 </style>
+
+<!-- 运动统计模块 -->
+<div class="activity-stats-wrapper">
+  <div class="activity-stats">
+    <div class="stat-item">
+      <div class="stat-label">总运动时间</div>
+      <div class="stat-value" id="total-time">362h 2m</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">总骑行距离</div>
+      <div class="stat-value" id="total-cycling">6,221.1km</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">总跑步距离</div>
+      <div class="stat-value" id="total-running">947.4km</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">总爬升</div>
+      <div class="stat-value" id="total-elevation">15,214m</div>
+    </div>
+  </div>
+</div>
 
 <!-- Strava活动嵌入内容区域 - 动态加载 -->
 <div class="strava-activities-wrapper">
