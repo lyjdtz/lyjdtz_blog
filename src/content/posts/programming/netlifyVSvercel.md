@@ -1,6 +1,6 @@
 ---
 title: 关于Vercel和Netlify
-published: 2025-09-19
+published: 2025-09-25
 description:  'Vercel和Netlify的对比与选择'
 image: ''
 tags: [Web开发]
