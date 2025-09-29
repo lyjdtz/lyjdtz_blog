@@ -31,7 +31,7 @@
   }
   
   .stat-value {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
     margin: 8px 0;
@@ -51,7 +51,7 @@
     flex-wrap: wrap;
     gap: 24px;
     width: 100%;
-    max-width: 1648px; /* 2个800px容器 + 24px间距 */
+    max-width: 824px; /* 1个800px容器 + 间距 */
     margin: 0 auto;
   }
   
@@ -59,8 +59,8 @@
   .strava-embed-container {
     position: relative;
     overflow: hidden !important; /* 强制隐藏容器的滚动条 */
-    height: 500px !important; /* 固定高度 */
-    width: calc(50% - 12px) !important; /* 两个并排，减去间距的一半 */
+    height: 855px !important; /* 固定高度 */
+    width: 100% !important; /* 一行一个 */
     max-width: 800px !important;
     pointer-events: none; /* 禁用鼠标事件，防止通过鼠标滚动 */
     border-radius: 8px;
@@ -70,7 +70,7 @@
   /* 针对iframe的样式覆盖 - 使用最高优先级 */
   .strava-embed-container iframe {
     width: 100% !important;
-    height: 500px !important; /* 固定高度，与容器一致 */
+    height: 860px !important; /* 固定高度，与容器一致 */
     border: none !important;
     border-radius: 8px !important;
     overflow: hidden !important; /* 强制禁用iframe自身的滚动条 */
@@ -102,7 +102,7 @@
   <div class="activity-stats">
     <div class="stat-item">
       <div class="stat-label">总运动时间</div>
-      <div class="stat-value" id="total-time">362h 2m</div>
+      <div class="stat-value" id="total-time">364h 19m</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">总骑行距离</div>
@@ -110,11 +110,11 @@
     </div>
     <div class="stat-item">
       <div class="stat-label">总跑步距离</div>
-      <div class="stat-value" id="total-running">947.4km</div>
+      <div class="stat-value" id="total-running">972.4km</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">总爬升</div>
-      <div class="stat-value" id="total-elevation">15,214m</div>
+      <div class="stat-value" id="total-elevation">15,222m</div>
     </div>
   </div>
 </div>
