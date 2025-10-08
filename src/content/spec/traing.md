@@ -102,19 +102,19 @@
   <div class="activity-stats">
     <div class="stat-item">
       <div class="stat-label">总运动时间</div>
-      <div class="stat-value" id="total-time">364h 19m</div>
+      <div class="stat-value" id="total-time">379h 4m</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">总骑行距离</div>
-      <div class="stat-value" id="total-cycling">6,221.1km</div>
+      <div class="stat-value" id="total-cycling">6,549.1km</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">总跑步距离</div>
-      <div class="stat-value" id="total-running">972.4km</div>
+      <div class="stat-value" id="total-running">977.4km</div>
     </div>
     <div class="stat-item">
       <div class="stat-label">总爬升</div>
-      <div class="stat-value" id="total-elevation">15,222m</div>
+      <div class="stat-value" id="total-elevation">15,969m</div>
     </div>
   </div>
 </div>
