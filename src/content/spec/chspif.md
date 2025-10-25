@@ -3,7 +3,7 @@
 ## 服务器信息
 
 ### 连接信息
-- 服务器IP: `chspif.xyz:666`
+- 服务器QQ群: 906380735[点击加入](https://qm.qq.com/q/HR4ol3Dnu8)
 - 同时兼容在线/离线玩家     [点击加入语音频道](https://kook.vip/0idhG6)
 
 ## 更新日志
