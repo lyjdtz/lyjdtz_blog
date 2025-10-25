@@ -10,6 +10,7 @@ export const zh_CN: Translation = {
 	[Key.knowledge]: "技能图",
 	[Key.traing]: "运动",
 	[Key.friend]: "友链",
+	[Key.chspif]: "服务器",
 
 
 	[Key.tags]: "标签",

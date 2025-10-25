@@ -31,4 +31,8 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: i18n(I18nKey.traing),
 		url: "/traing/",
 	},
+	[LinkPreset.chspif]: {
+		name: i18n(I18nKey.chspif),
+		url: "/chspif/",
+	},
 };

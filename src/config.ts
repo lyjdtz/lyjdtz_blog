@@ -45,6 +45,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.traing,
 		LinkPreset.me,
+		LinkPreset.chspif,
 		//https://www.processon.com/embed/68d2a55ad418893a51d1bea1
 		{
 			name: "统计",

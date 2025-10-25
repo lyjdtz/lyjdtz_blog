@@ -7,6 +7,7 @@ enum I18nKey {
 	search = "search",
 	friend = "friend",
 	traing = "traing",
+	chspif = "chspif",
 
 	tags = "tags",
 	categories = "categories",
