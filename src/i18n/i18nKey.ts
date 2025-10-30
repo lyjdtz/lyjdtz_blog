@@ -8,6 +8,7 @@ enum I18nKey {
 	friend = "friend",
 	traing = "traing",
 	chspif = "chspif",
+	crowdfunding = "crowdfunding",
 
 	tags = "tags",
 	categories = "categories",
