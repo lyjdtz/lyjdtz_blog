@@ -1,5 +1,36 @@
 # CHSPIF
 
+### ·2025-10-30更新 
+
+- 更新了右侧轮播统计
+- 更新了网页地图，你可以点击[这里](https://www.chspif.space/)查看
+- 更新了防熊查询，自10月27日之后的所有玩家行为会被详细记录
+- 更新了备份逻辑，现在服务器会每六小时自动进行一次备份，并只保留最近十次备份。这意味着你可以选择回档到最近六十个小时内以六个小时为间隔的其中一个节点
+- 更新了一些新的成就
+- 更新了Servux,现在Minihud的结构在服务器内已可以正常显示
+- 更新了聊天栏的输出格式
+  :::warning
+  该更新目前会导致管理员死亡信息无法正常显示的Bug
+  :::
+- 更新了多个服务器优化mod
+    :::important
+    优化可能导致游戏内出现异常行为，如游戏机制出现与原版不符，你可以从下面详细说明中进行排查
+    :::
+  - Async    [Github](https://github.com/AxalotLDev/Async)
+    - 使用多线程改进实体性能
+    - 默认不使用并行处理生物运动，可能会导致实体运动与原版逻辑不同步
+  - ScalableLux  [Github](https://github.com/RelativityMC/ScalableLux)
+    - 并行处理光照更新，优化区块生成性能
+  - VMP  [Github](https://github.com/RelativityMC/VMP-fabric)
+    - 优化实体渲染和数据包发送等
+  - TT20  [Github](https://github.com/snackbag/tt20)
+    :::caution
+    注意！该mod和某些mod共同作用时，会出现盾牌有概率无法抵挡伤害的Bug，该Bug在服务器内已经证实出现，目前还在排查原因
+    :::
+    - 重新计算进行某些活动所需的 tick，它会将原来活动所需的 tick 乘以 TPS 再除以 20，使得TPS较低时感官上没有卡顿
+  - Lithium    [Github](https://github.com/CaffeineMC/lithium)
+    - 无需多言，较为稳定，机制出现异常不太需要怀疑它
+
 ### ·2025-10-26更新 
 
 - 更新了末影箱，使其容量变为原来两倍

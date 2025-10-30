@@ -43,7 +43,7 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		LinkPreset.traing,
+		//LinkPreset.traing,
 		LinkPreset.me,
 		LinkPreset.chspif,
 		//https://www.processon.com/embed/68d2a55ad418893a51d1bea1
