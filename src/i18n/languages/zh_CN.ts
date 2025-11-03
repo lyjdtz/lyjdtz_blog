@@ -12,6 +12,7 @@ export const zh_CN: Translation = {
 	[Key.friend]: "友链",
 	[Key.chspif]: "服务器",
 	[Key.crowdfunding]: "众筹",
+	[Key.project]: "项目",
 
 
 	[Key.tags]: "标签",

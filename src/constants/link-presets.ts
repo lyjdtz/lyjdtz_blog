@@ -39,4 +39,8 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		name: i18n(I18nKey.crowdfunding),
 		url: "/crowdfunding/",
 	},
+	[LinkPreset.project]: {
+		name: i18n(I18nKey.project),
+		url: "/project/",
+	},
 };

@@ -54,6 +54,7 @@ export enum LinkPreset {
 	traing = 6,
 	chspif = 7,
 	crowdfunding = 8,
+	project = 9,
 }
 
 export type NavBarLink = {
