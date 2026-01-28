@@ -11,7 +11,7 @@ export const zh_CN: Translation = {
 	[Key.traing]: "运动",
 	[Key.friend]: "友链",
 	[Key.chspif]: "服务器",
-	[Key.crowdfunding]: "众筹",
+	[Key.crowdfunding]: "赞助",
 	[Key.project]: "项目",
 
 
