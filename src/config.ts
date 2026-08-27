@@ -43,17 +43,6 @@ export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home,
 		LinkPreset.Archive,
-		//LinkPreset.traing,
-		LinkPreset.project,
-		LinkPreset.me,
-		LinkPreset.chspif,
-		//https://www.processon.com/embed/68d2a55ad418893a51d1bea1
-		{
-			name: "统计",
-			url: "https://cloud.umami.is/share/3y9hrX71x9jicbBy/lyjdtz.life",
-			external: true,
-		},
-		
 	],
 };
 

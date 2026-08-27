@@ -4,7 +4,7 @@ published: 2025-09-27
 description:  '加速Vercel应用访问'
 image: ''
 tags: [DNS加速]
-category: '编程'
+category: 'Code'
 draft: false
 ---
 
